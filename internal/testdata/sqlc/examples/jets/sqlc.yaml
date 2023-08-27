@@ -1,0 +1,14 @@
+version: "2"
+plugins:
+  - name: sqlc-pg
+    process:
+      cmd: ./sqlc-pg
+sql:
+  - engine: postgresql
+    queries: query.sql
+    schema: schema.sql
+    codegen:
+      - plugin: sqlc-pg
+        out: sqlc
+        options:
+          dump_input: true

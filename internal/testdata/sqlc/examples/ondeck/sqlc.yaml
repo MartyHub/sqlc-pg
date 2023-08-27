@@ -1,0 +1,18 @@
+version: "2"
+plugins:
+  - name: sqlc-pg
+    process:
+      cmd: ./sqlc-pg
+sql:
+  - engine: postgresql
+    queries: query
+    schema: schema
+    codegen:
+      - plugin: sqlc-pg
+        out: sqlc
+        options:
+          dump_input: true
+          emit_db_tags: true
+          emit_table_names: true
+          emit_params_struct_pointers: true
+          emit_result_struct_pointers: true
