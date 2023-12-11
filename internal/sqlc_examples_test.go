@@ -27,7 +27,7 @@ func Test_sqlc_examples(t *testing.T) {
 
 			rep, err := generator.Generate()
 			require.NoError(t, err)
-			require.Greater(t, len(rep.Files), 0)
+			require.NotEmpty(t, rep.Files)
 
 			for _, file := range rep.Files {
 				expected, err := os.ReadFile(filepath.Join(dir, file.Name))
