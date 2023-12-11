@@ -6,6 +6,7 @@ linters:
     - depguard
     - exhaustruct
     - paralleltest
+    - protogetter
     - tagliatelle
     - testpackage
     - varnamelen
