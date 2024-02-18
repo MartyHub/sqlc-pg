@@ -345,6 +345,7 @@ func (gen *Generator) call(name string, str StructMetadata) *j.Statement {
 			for _, field := range str.Fields {
 				group.Line().Id(name).Dot(field.Name)
 			}
+
 			group.Line()
 		})
 	}
