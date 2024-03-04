@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/MartyHub/gid v0.0.1
 	github.com/dave/jennifer v1.7.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	google.golang.org/protobuf v1.32.0
 )
 
