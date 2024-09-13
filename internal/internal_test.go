@@ -35,7 +35,7 @@ func dirs(t *testing.T, path string) []string {
 		return nil
 	})
 	require.NoError(t, err)
-	require.NotZero(t, len(result))
+	require.NotEmpty(t, result)
 
 	return result
 }
