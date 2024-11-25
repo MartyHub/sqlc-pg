@@ -6,7 +6,7 @@ require (
 	github.com/MartyHub/gid v0.0.1
 	github.com/dave/jennifer v1.7.1
 	github.com/stretchr/testify v1.10.0
-	google.golang.org/protobuf v1.34.2
+	google.golang.org/protobuf v1.35.2
 )
 
 require (
